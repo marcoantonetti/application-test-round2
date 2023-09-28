@@ -1,0 +1,461 @@
+/* styles for header */
+
+*{
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    --dark-purple-title:  rgb(43, 52, 70);
+    --light-purple: rgb(65, 79, 107);
+    --light-purple-translucid: rgba(65, 79, 107, 0.5);
+    --grey-light : rgba(149, 153, 162, 0.7);
+    --white-translucid: rgba(255, 255, 255, 0.726);
+    --lightgrey-purple: rgb(105, 120, 154);
+
+
+
+}
+
+body{
+
+    overflow-x: hidden;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+
+    color: rgb(4, 4, 4);
+
+}
+
+
+header {
+
+    
+    position: relative;
+    height: 45rem;
+
+}
+
+/* Two images and title */
+
+/* Box is for the 2 images and main title */
+.box{
+
+    position: absolute;
+
+
+}
+
+.background-image-first{
+
+    background-image: url(/images/main4.jpg);
+    background-size: cover;
+    top: 0rem;
+    height: 25rem;
+    width: 100vw;
+    background-position: top;
+    background-repeat: no-repeat;
+
+    z-index: 1;
+
+
+}
+
+.background-image-second{
+
+    background-image: url(/images/bosque.png);
+    background-size: cover;
+
+
+    top: 25rem;
+    width: 100vw;
+    height: 20rem;
+    background-position: bottom;
+
+
+    z-index: 3;
+
+
+}
+
+
+h1{
+    
+    color: rgb(155, 134, 120);
+    text-align: center;
+
+    height: auto;
+    width: 100%;
+    margin: 18rem 0rem -10rem 0rem;
+    font-weight: bolder;
+
+    font-size: 3.5rem;
+
+
+    z-index: 2;
+
+
+}
+
+
+
+.span-mountains{
+
+    color: var(--dark-purple-title);
+    font-size: 5rem;
+
+    position: relative;
+    bottom: 1.3rem;
+
+}
+
+.LOSANGELES{
+
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: rgb(71, 65, 65);
+    padding-top: 0.4rem;
+
+
+}
+
+.blue {
+
+    color: var(--dark-purple-title);
+    font-size: 1.7rem;
+
+
+    position: relative;
+    bottom: 1.8rem;
+
+
+}
+
+/* End - Two images and title */
+
+
+/* nav bar */
+
+.navbar{
+
+    display: flex;
+    justify-content: space-around;
+
+    padding: 1rem 0;
+
+
+}
+
+.div-close-links{
+
+    display: flex;
+
+}
+
+.div-close-links p{
+
+    margin: 1rem;
+    padding: 0;
+
+    font-size: 1.1rem;
+
+}
+
+.div-logo-title-wrapper{
+
+    display: flex;  
+    margin-top: 0.6rem;
+
+}
+
+.small-logo{
+
+    height: 50px;
+    width: 50px;
+
+}
+
+.navbar.white{
+
+    background-color: white;
+    height: 6rem;
+
+}
+
+.p-title{
+
+    font-size: 1.2rem;
+
+}
+
+/* end nav bar */
+
+/* Section History */
+
+.section-history{
+
+    background: url(/images/main5.jpg);
+    background-size: cover;
+    height: 45rem;
+    width: 100vw;
+
+
+}
+
+.div-wrapper-main{
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    margin: auto;
+    width: 60%;
+
+
+}
+
+.big-number{
+
+    font-size: 8rem;
+    color: var(--grey-light);
+    position: relative;
+    left: 7.5rem;
+    font-weight: bolder
+
+}
+
+.absolute-subtitle{
+
+    font-size: 2.5rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 8rem;    
+
+}
+
+.p-description {
+
+    margin: 8rem 10rem 0rem 0rem;
+    min-width: 50rem;
+    background-color: rgba(255, 255, 255, 0.272); /* Because of the nature of the background I decided to add this for a better contrast.*/
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+
+
+}
+
+/* Carrousel */
+
+/* I put two arrows instead of 3 buttons because on mobile 
+less than 4 images at the time can be seen hence 3 buttons are not enough to show the 12 pictures
+*/
+
+/* End Carrousel */
+
+.div-carousel-container{
+
+    width: 100vw;
+    background-color: var(--light-purple-translucid);
+
+    height: 13rem;
+    margin-top: 18.3rem;
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    flex-direction: column;
+
+    padding-top: 1rem;
+
+
+}
+
+.div-carousel{
+
+
+  display: flex;
+  width: 43rem;
+
+}
+
+.ul-carousel-slide.active{
+
+    display: flex;
+    gap: 1rem;
+
+}
+
+.ul-carousel-slide{
+
+    display: none;
+
+}
+
+.ul-carousel-slide li img {
+
+    width: 10rem;
+    max-height: 10rem;
+
+}
+
+.button-carousel{
+
+    width: 0.40rem;
+    height: 0.40rem;
+    margin: 0 0.07rem;
+    border: none;
+
+    background-color: rgba(192, 191, 191, 0.508);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+}
+
+.button-carousel:hover{
+
+    background-color: rgba(192, 191, 191, 1);
+
+}
+
+.button-carousel.active{
+
+    background-color: rgba(192, 191, 191, 1);
+
+}
+
+/* End Section History */
+
+/* Start Climb Section */
+
+.div-climb-image-container{
+
+    background: url(/images/snowy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 38rem;
+    width: 100vw;
+}
+
+.p-description.center {
+
+    margin: 2rem 6rem 0rem 0rem;
+    padding-left: 15rem;
+    background-color: transparent;
+    min-width: 55rem;
+}
+
+.div-short-black-bar{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    height: 3.5rem;
+    background-color: var(--light-purple);
+    padding-left: 14rem;
+    font-size: 2rem;
+
+}
+
+.p-mountain.active{
+
+    background-color: var(--grey-light);
+    color: var(--light-purple);
+    text-decoration: underline;
+
+    padding: 0.575rem;
+}
+
+.p-mountain{
+
+    cursor: pointer;
+    color: var(--grey-light);
+
+    font-weight: bolder;
+
+}
+
+.div-box-wrapper{
+
+    display: flex;
+    flex-direction: column;
+
+
+    background-color: var(--white-translucid);
+
+    width: 350px;
+    margin: 6rem 15rem 20rem 22rem;
+
+    padding: 1rem 2rem;
+
+}
+
+.h4-schedule{
+
+    text-align: start;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    color: var(--light-purple);
+
+
+}
+
+.div-date-location{
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.more-margin{
+
+    margin: 2rem 0rem;
+
+}
+
+
+/* End Climb Section */
+
+/* Footer */
+
+.footer-div-wrapper {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+    background-color: var(--light-purple);
+    color: var(--lightgrey-purple) ;
+
+
+}
+
+footer .div-logo-title-wrapper{
+
+    margin-top: 1rem;
+    
+}
+
+#footer-LA, #mountains-footer{
+
+    color: var(--lightgrey-purple);
+
+}
+
+.p-copyright{
+    
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+}
+
+
+/* End Footer */
